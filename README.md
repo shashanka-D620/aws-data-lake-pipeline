@@ -6,27 +6,7 @@ Designed and implemented an end-to-end serverless AWS Data Lake pipeline for aut
 
 ## Architecture
 
-S3 Raw Layer
-↓
-Lambda Trigger
-↓
-Glue ETL Job
-↓
-S3 Processed Layer
-↓
-Airflow Scheduler
-↓
-S3KeySensor
-↓
-Glue Crawler
-↓
-Glue Data Catalog
-↓
-Data Quality Check
-↓
-Athena Query
-↓
-Email Notification
+S3 Raw Layer -> Lambda Trigger -> Glue ETL Job -> S3 Processed Layer -> Airflow Scheduler -> S3KeySensor -> Glue Crawler -> Glue Data Catalog -> Data Quality Check -> Athena Query -> Email Notification
 
 ## Technologies Used
 
